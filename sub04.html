@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BINI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href=img"/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <ul>
+            <li class="logo"><a href="index.html"><img src="img/logo.png" width="70" alt="logo"></a></li>
+            <li></li>
+            <li></li>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="sub01.html">Design</a></li>
+            <li><a href="index.html">Project</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+     <div class="contact">
+       <div class="animate__animated animate__flipInX"><img src="img/contact_title.png" width="350" alt="contact"></div>
+       <div class="tracking-in-expand-fwd">view</div>
+      <div class="fade-in-top"><img src="img/top_icon.png" width="55"></div>
+      <div class="fade-up" data-aos="fade-up" data-aos-easing="linear"
+   data-aos-duration="1500">
+      <div class="contact_mid"><img src="img/contact.png" width="450"></div>
+      <div class="contact_button"><a href="mailto:010302ii@gmail.com"><button class="btn hover1">Call me here.</button></a></div>
+      </div>
+    </div>
+    </section>
+
+
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+    <!--AOS 스트립트 적용 부문 끝-->
+
+    <!--특정위치로 쩜프해서 이동 시작 : 마지막 숫자를 조절하면 속도조절이 됩니다.-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+        function fnMove(seq){
+            var offset = $("#anchor" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top},500);
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BINI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href=img"/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bingworld2.github.io/design/">
+    <meta property="og:title" content="이유빈의 포트폴리오">
+    <meta property="og:image" content="img/ogtag.png">
+    <meta property="og:description" content="잔잔하면서 깊은 인상을 주는 디자인을 추구합니다.">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <ul>
+            <li class="logo"><a onclick="fnMove('1')"><img src="img/logo.png" width="70" alt="logo"></a></li>
+            <li></li>
+            <li></li>
+            <li><a onclick="fnMove('2')">Profile</a></li>
+            <li><a onclick="fnMove('3')">Design</a></li>
+            <li><a onclick="fnMove('4')">Project</a></li>
+            <li><a href="sub04.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="top">
+        <div class="top_wrap">
+          <div class="top_title">
+          <div class="fade-in-bottom">Paint the Design</div>
+          <div class="fade-in-bottom2">with gradation blue</div>
+          <div class="fade-in-bottom3">like a ocean</div>
+          </div>
+          <div class="fade-in-bottom4"><div class="bottom">I 032</div></div>
+          </div>
+          <div class="top_icon">
+            <div class="animate__animated animate__fadeInDown"><img src="img/top_icon.png" width="60" alt="icon"></div>
+          </div>
+      </div>
+
+      <div class="top2">
+        <div class="top_wrap2">
+          <div class="top_write" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500"><img src="img/top_mid.jpg" width="400" alt="write"></div>
+        </div>
+      </div>
+
+      <div class="mid">
+        <div class="mid_wrap" id="anchor2" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500"><img src="img/profile.jpg" width="800" alt="profile"></div>
+      </div>
+
+      <div class="mid2" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class="mid_wrap2" id="anchor3"><img src="img/design.jpg" width="780" alt="design"></div>
+      <div class="design_wrap">
+        <div class="design"><p class="a"><a href="">Brand Identity</a></P></div>
+        <div class="design"><p class="b"><a href="sub01.html">Editorial</a></P></div>
+        <div class="design"><p class="c"><a href="sub02.html">Web Design</a></P></div>
+        <div class="design"><p class="d"><a href="sub03.html">UI/UX</a></P></div>
+        <div class="design"><p class="e"><a href="">Graphic Design</a></P></div>
+        <div class="design"><p class="f"><a href="">Advertisal</a></P></div>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_wrap" id="anchor4"><img src="img/footer.png" width="600" alt="design"></div>
+      </div>
+    </footer>
+    <!--AOS 스트립트 적용 부문 시작-->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+    <!--AOS 스트립트 적용 부문 끝-->
+
+    <!--특정위치로 쩜프해서 이동 시작 : 마지막 숫자를 조절하면 속도조절이 됩니다.-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+        function fnMove(seq){
+            var offset = $("#anchor" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top},500);
+        }
+    </script>
+
+
+  </body>
+</html>
